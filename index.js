@@ -62,7 +62,7 @@ function loadDefaultScene()
         function(data) {
             physicsData = JSON.parse(data);
             if(_scene !== undefined) {
-                createPhysicsScene(_scene, data);
+                createPhysicsScene(_scene, physicsData);
             }
         },
         function(xhr) {
